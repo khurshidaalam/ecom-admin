@@ -3,7 +3,7 @@ import {Navbar} from "./components";
 
 function App() {
   return (
-    <div>
+    <div className="bg-gray-200 min-h-screen">
      <Navbar/>
     </div>
   );
