@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState,useCallback} from 'react';
 import MenuOpenIcon from '@material-ui/icons/MenuOpen';
 import Avatar from '@material-ui/core/Avatar';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
@@ -7,18 +7,19 @@ import SearchIcon from '@material-ui/icons/Search';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Sidebar from "./Sidebar";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  // const [showSidebar, setShowSidebar] = useState(true);
+  //   const toggleSidebar = useCallback(() => setShowSidebar(value => !value));
   // const [open, setOpen] = useState(true);
 
   // const handleClick =()=>{
-  //   setOpen(!open);
+  //   setOpen(false);
   //   console.log("clicked");
   // }
 
   return (
-    <div className="flex">
-      <Sidebar/>
-      <div className="bg-white border-b border-gray-300 h-20 w-screen p-4 flex justify-between items-center relative">
+    
+      <div className="bg-white border-b border-gray-300 h-20 p-4 flex justify-between items-center relative">
         <div className="sidebar-btn mr-auto text-center ">
           <button><MenuOpenIcon className="relative" /></button>
         </div>
@@ -45,9 +46,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
-
-
+       
   );
 };
 
