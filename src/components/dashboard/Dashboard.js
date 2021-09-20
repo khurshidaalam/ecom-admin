@@ -1,5 +1,10 @@
 import { data } from 'autoprefixer';
 import React from 'react';
+import Chart1 from "./Chart1";
+import Chart2 from './Chart2';
+import Chart3 from './Chart3';
+import Chart4 from './Chart4';
+
 
 const Data = [
     {
@@ -45,6 +50,7 @@ const Data = [
 
 ]
 
+
 const Dashboard = () => {
     return (
         <div className="p-4">
@@ -69,6 +75,15 @@ const Dashboard = () => {
 
 
             </div>
+            <h4 className="relative capitalize pt-4 text-xl">graphical overview</h4>
+            <div className="grid grid-cols-4 gap-4 py-4 h-36">
+                <Chart1 className="shadow-sm h-36"/>
+                <Chart2 className="shadow-sm h-36"/>
+                <Chart3 className="shadow-sm h-36"/>
+                <Chart4 className="shadow-sm h-36"/>
+
+            </div>
+
 
         </div>
     );
