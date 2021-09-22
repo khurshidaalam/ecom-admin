@@ -20,12 +20,11 @@ const Navbar = (props) => {
   return (
     
       <div className="bg-white border-b border-gray-300 h-20 p-4 flex justify-between items-center relative">
-        <div className="sidebar-btn mr-auto text-center ">
+        <div className="sidebar-btn text-center ">
           <button><MenuOpenIcon className="relative" /></button>
         </div>
-        <div className="account flex justify-evenly items-center">
-          <div className="search flex items-center relative pl-2">
-            <input type="search" className="p-2 bg-gray-200 text-white rounded-3xl focus:bg-gray-300 
+          <div className="search flex items-center w-1/4 relative pl-2">
+            <input type="search" className="p-2 w-full bg-gray-200 text-white rounded-3xl focus:bg-gray-300 
           focus:outline-none
           " placeholder="Search here..." />
             <SearchIcon className="absolute right-2" />
@@ -45,7 +44,7 @@ const Navbar = (props) => {
             <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" className="ml-5" />
           </div>
         </div>
-      </div>
+     
        
   );
 };
