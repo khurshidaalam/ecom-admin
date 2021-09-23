@@ -4,7 +4,7 @@ import { format, parseISO, subDays } from "date-fns";
 
 const data = [];
 
-for (let num = 30; num >= 0; num--){
+for (let num = 10; num >= 0; num--){
   data.push({
     Date: subDays(new Date(), num).toISOString().substr(0,10),
     value: 1 + Math.random(),
@@ -26,7 +26,7 @@ export default function Chart1 () {
         bottom: 0,
       }}
       >
-      <Area dataKey="value" stroke="#2d3436" fill="#b2bec3"/>
+      <Area dataKey="value" stroke="#d63031" fill="#ff7675"/>
       {
     //     <XAxis 
     //   dataKey="date" 
